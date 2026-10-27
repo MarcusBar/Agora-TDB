@@ -16,7 +16,7 @@
 }
 
 header{
-    background-color: red;
+    box-shadow: 0 -8vh 100px 0;
 }
 
 nav{
@@ -30,11 +30,12 @@ nav{
 a{
     color: inherit;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 nav a{
     display: flex;
-    
+    align-items: flex-end;
 }
 
 nav a div{
@@ -42,14 +43,18 @@ nav a div{
 }
 
 #logo span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #050505;
     color: var(--secondary-color);
     font-size: 2rem;
-    width: 2.7vw;
+    width: 3.5vw;
     text-align: center;
-    height: 6vh;
-    border-radius: 5px;
+    height: 5vh;
+    border-radius: 10px;
     font-family: "Poppins", sans-serif;
+    font-weight: 650;
 }
 
 #logo div h3{
@@ -61,6 +66,7 @@ nav a div{
 #logo div p{    
     font-family: "Poppins", sans-serif;
     font-size: 0.7rem;
+    color: #4e4e4e;
 
 }
 
@@ -75,6 +81,9 @@ li{
     font-weight: 600;
 }
 
+body{
+    background-color: aliceblue;
+}
 
 footer{
 
