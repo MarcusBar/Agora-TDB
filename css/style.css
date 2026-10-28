@@ -6,6 +6,7 @@
 }
 
 :root{
+    --dark-color: rgb(26, 26, 26);
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(226, 244, 25);
     --white-off: rgb(246, 246, 241);

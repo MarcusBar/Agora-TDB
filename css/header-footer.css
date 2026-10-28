@@ -6,7 +6,7 @@
 
 header{
     box-shadow: 0 -8vh 100px 0;
-    background-color: var(--white-off);
+    background-color: var(--dark-color);
 }
 
 nav{
@@ -18,7 +18,7 @@ nav{
 }
 
 a{
-    color: inherit;
+    color: var(--primary-color);
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
@@ -36,7 +36,7 @@ nav a div{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #050505;
+    background-color: #2e2e2e;
     color: var(--secondary-color);
     font-size: 2rem;
     width: 3.5vw;
@@ -51,6 +51,7 @@ nav a div{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
+    color: var(--primary-color);
 }
 
 #logo div p{    
