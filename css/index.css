@@ -1,0 +1,96 @@
+@import url(style.css);
+
+.inicio-index{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/BackgroundIndex.jpg);
+    width: 100%;
+    height: 51.3vh;
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inicio-esquerda{
+    width: 35%;
+}
+
+.inicio-esquerda h1, .inicio-esquerda h1 span{
+    color: var(--primary-color) ;
+    font-family: "Poppis", sans-serif;
+    font-size: 3.5rem;
+}
+
+.inicio-esquerda h1 span{
+    color: var(--secondary-color) ;
+}
+
+.inicio-esquerda h4 {
+    color: var(--secondary-color) ;
+    font-size: 0.8rem;
+    font-family: "Poppis", sans-serif;
+}
+
+.inicio-esquerda p {
+    font-family: "Poppis", sans-serif;
+    font-size: 0.9rem;
+    color: var(--blue-light);
+    padding: 1rem 0;
+    line-height: 1.2rem;
+}
+
+.bnts{
+    font-family: "Poppis", sans-serif;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.bnts button{
+    height: 5vh;
+    width: 13vw;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(236, 247, 144);
+    border: none;
+    font-weight: 600;
+}
+
+.bnts .campanhas{
+    color: black;
+    background-color: var(--secondary-color);
+}
+
+.inicio-direita{
+ background-color: var(--secondary-color);
+ width: 18vw;
+ height: 25vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ border-radius: 14px;
+ font-family: "Poppis", sans-serif;
+ text-align: center;
+ margin-right: 5vw;
+ transform: rotate(-5deg);
+}
+
+.inicio-direita h2{
+    font-size: 2.3rem;
+    
+}
+
+.inicio-direita h3{
+    font-size: 1rem;
+    font-weight: 530;
+    
+}
+
+.inicio-direita h4{
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-top: 2vh;
+    
+}

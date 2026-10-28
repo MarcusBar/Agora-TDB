@@ -6,86 +6,9 @@
 }
 
 :root{
-    --primary-color: rgb(249, 247, 250);
-    --secondary-color: rgba(37, 245, 37, 0.933);
-}
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    box-shadow: 0 -8vh 100px 0;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5rem;
-    height: 10vh;
-}
-
-a{
-    color: inherit;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-}
-
-nav a{
-    display: flex;
-    align-items: flex-end;
-}
-
-nav a div{
-    margin: 0 0.5rem;
-}
-
-#logo span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #050505;
-    color: var(--secondary-color);
-    font-size: 2rem;
-    width: 3.5vw;
-    text-align: center;
-    height: 5vh;
-    border-radius: 10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 650;
-}
-
-#logo div h3{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-
-#logo div p{    
-    font-family: "Poppins", sans-serif;
-    font-size: 0.7rem;
-    color: #4e4e4e;
-
-}
-
-ul{
-    display: flex;
-    list-style: none;
-}
-
-li{
-    margin: 0 1rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-body{
-    background-color: aliceblue;
-}
-
-footer{
-
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(226, 244, 25);
+    --white-off: rgb(246, 246, 241);
+    --blue-light: rgb(208, 238, 252);
 }
 
