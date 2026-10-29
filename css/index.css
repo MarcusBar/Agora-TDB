@@ -1,103 +1,113 @@
-@import url(style.css);
-
 .inicio-index{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/ImagemFundo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/ImagemFundo.jpg);
     width: 100%;
-    height: 90vh;
-    background-size:cover;
-    background-position:center;
+    min-height: calc(100vh - 80px);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 5rem;
 }
 
 .inicio-esquerda{
-    width: 45%;
+    max-width: 600px;
 }
 
-.inicio-esquerda h1, .inicio-esquerda h1 span{
-    color: var(--primary-color) ;
-    font-family: "Poppis", sans-serif;
-    font-size: 4.5rem;
+.inicio-esquerda .tagline {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    word-spacing: 0.2rem;
 }
 
-.inicio-esquerda h1 span{
-    color: var(--secondary-color) ;
+.inicio-esquerda h1 {
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
 }
 
-.inicio-esquerda h4 {
-    color: var(--secondary-color) ;
-    font-size: 1.2rem;
-    margin-bottom: 1vh;
-    font-family: "Poppis", sans-serif;
-    word-spacing: 0.5rem;
+.inicio-esquerda h1 span {
+    color: var(--secondary-color);
 }
 
-.inicio-esquerda p {
-    font-family: "Poppis", sans-serif;
+.inicio-esquerda .descricao {
     font-size: 1rem;
-    width: 80%;
-    color: var(--ink-light);
-    letter-spacing: 0.1rem;
-    padding: 1rem 0;
-    line-height: 1.2rem;
+    color:  var(--paper);
+    margin-bottom: 2rem;
+    opacity: 0.9;
 }
 
-.bnts{
-    font-family: "Poppis", sans-serif;
+.bnts {
     display: flex;
     gap: 1rem;
-    
-    
 }
 
-.bnts button{
-    height: 7vh;
-    width: 16vw;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(236, 247, 144);
-    border: none;
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    transition: transform 0.2 ease, background-color 0.2 ease;
 }
 
-.bnts .campanhas{
-    color: black;
+.btn:hover {
+    transform: translate(-2px);
+}
+
+.btn-primary {
     background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
 }
 
 .inicio-direita{
  background-color: var(--secondary-color);
- width: 22vw;
- height: 30vh;
+ width: 280px;
+ padding: 2.5rem 1.5rem;
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
  border-radius: 14px;
- font-family: "Poppis", sans-serif;
  text-align: center;
- margin-right: 7vw;
- margin-top: -2vh;
  transform: rotate(-5deg);
+ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.inicio-direita h2{
-    font-size: 2.3rem;
-    
-}
-
-.inicio-direita h3{
+.inicio-direita .card-subtitle {
     font-size: 1rem;
-    font-weight: 530;
-    
+    font-weight: 600;
+    letter-spacing: 0.1rem;
 }
 
-.inicio-direita h4{
-    font-size: 0.7rem;
-    font-weight: 300;
-    margin-top: 2vh;
-    
+.inicio-direita .card-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0.5rem 0;
+}
+
+.inicio-direita .card-footer {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+/* em construção */
+.secao-praca {
+    padding: 5rem 0;
+    text-align: center;
 }

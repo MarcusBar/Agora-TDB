@@ -1,20 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+:root {
+  --dark-color: #1a1a1a;
+  --primary-color: #ffffff;
+  --secondary-color: #e2f419;
+  --ink: #252525;
+  --ink-soft: #353633;
+  --ink-light: #979797;
+  --paper: #f5f5ef;
+  --white: #ffffff;
+  --lime: #d5df00;
+  --lime-dark: #b8c300;
+  --font-main: 'Poppins', sans-serif;
 }
 
-:root{
-    --dark-color: rgb(26, 26, 26);
-    --primary-color: rgb(255, 255, 255);
-    --secondary-color: rgb(226, 244, 25);
-    --ink: #252525;
-    --ink-soft: #353633;
-    --ink-light: #979797;
-    --paper: #f5f5ef;
-    --white: #fff;
-    --lime: #d5df00;
-    --lime-dark: #b8c300;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
 }
 
