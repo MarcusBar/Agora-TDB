@@ -9,7 +9,12 @@
     --dark-color: rgb(26, 26, 26);
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(226, 244, 25);
-    --white-off: rgb(246, 246, 241);
-    --blue-light: rgb(208, 238, 252);
+    --ink: #252525;
+    --ink-soft: #353633;
+    --ink-light: #979797;
+    --paper: #f5f5ef;
+    --white: #fff;
+    --lime: #d5df00;
+    --lime-dark: #b8c300;
 }
 

@@ -6,7 +6,7 @@
 
 header{
     box-shadow: 0 -8vh 100px 0;
-    background-color: var(--dark-color);
+    background-color: var(--ink);
 }
 
 nav{
@@ -29,46 +29,44 @@ nav a{
 }
 
 nav a div{
-    margin: 0 0.5rem;
+    margin: 0 0.6rem;
 }
 
-#logo span{
+#container-logo{
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #2e2e2e;
-    color: var(--secondary-color);
-    font-size: 2rem;
-    width: 3.5vw;
-    text-align: center;
-    height: 5vh;
-    border-radius: 10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 650;
+    justify-content: center;
 }
 
-#logo div h3{
+.imagem-tdb img {
+    width: 4vw;
+    height: 6.5vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#container-logo div h3{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
 }
 
-#logo div p{    
+#container-logo div p{    
     font-family: "Poppins", sans-serif;
     font-size: 0.7rem;
-    color: #4e4e4e;
-
+    color: var(--ink-light);
 }
 
-ul{
+.container-pages{
     display: flex;
     list-style: none;
 }
 
-li{
+.container-pages a{
+    color: var(--ink-light);
     margin: 0 1rem;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
