@@ -1,0 +1,88 @@
+/* Lista com os integrantes do grupo, tres por linha */
+
+.secao-integrantes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem var(--space-page) 5rem;
+}
+
+.lista-integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem 2rem;
+}
+
+.lista-integrantes > li {
+    flex: 0 1 calc((100% - 4rem) / 3);
+}
+
+/* Card de cada integrante, com foto, nome e links */
+
+.integrante img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.integrante-info {
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+.integrante-info h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.integrante-info p {
+    color: var(--ink-light);
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.integrante-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.integrante-links a,
+.link-suspenso {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 2px solid var(--secondary-color);
+    transition: background-color 0.2s ease;
+}
+
+.integrante-links a:hover {
+    background-color: var(--secondary-color);
+}
+
+.link-suspenso {
+    border-color: var(--ink-light);
+    color: var(--ink-light);
+}
+
+/* No tablet ficam dois por linha e no celular um embaixo do outro */
+
+@media (max-width: 900px) {
+    .lista-integrantes > li {
+        flex-basis: calc((100% - 2rem) / 2);
+    }
+}
+
+@media (max-width: 560px) {
+    .lista-integrantes > li {
+        flex-basis: 100%;
+        max-width: 320px;
+    }
+}

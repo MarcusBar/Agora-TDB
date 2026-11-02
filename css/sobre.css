@@ -1,0 +1,165 @@
+/* Parte que explica a nossa solucao */
+
+.sobre-solucao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 5rem var(--space-page);
+}
+
+.sobre-texto {
+    max-width: 650px;
+}
+
+.sobre-texto h2,
+.sobre-funcionamento h2,
+.sobre-contexto h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.sobre-texto p,
+.sobre-contexto p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* Card inclinado que fica do lado do texto */
+
+.sobre-destaque {
+    background-color: var(--secondary-color);
+    min-width: 20vw;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    text-align: center;
+    transform: rotate(-5deg);
+    box-shadow: var(--shadow);
+    margin-right: 3rem;
+}
+
+.sobre-destaque .card-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.sobre-destaque .card-title {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0.5rem 0;
+}
+
+.sobre-destaque .card-footer {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+/* Passo a passo de como a plataforma funciona */
+
+.sobre-funcionamento {
+    background-color: var(--dark-color);
+    color: var(--paper);
+    padding: 5rem var(--space-page);
+}
+
+.sobre-funcionamento h2 {
+    color: var(--primary-color);
+}
+
+.sobre-funcionamento h2 span {
+    color: var(--secondary-color);
+}
+
+.lista-passos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.passo {
+    background-color: var(--ink-soft);
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius);
+    border-top: 4px solid var(--secondary-color);
+}
+
+.passo-topico {
+    display: block;
+    color: var(--secondary-color);
+    opacity: 0.6;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.passo-descricao h3 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.passo-descricao p {
+    font-size: 0.9rem;
+    color: var(--paper);
+    opacity: 0.85;
+}
+
+.sobre-fechamento {
+    margin-top: 3rem;
+    max-width: 800px;
+    font-weight: 500;
+}
+
+/* Quem somos e de onde veio o nome do projeto */
+
+.sobre-contexto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 5rem var(--space-page);
+}
+
+/* Ajustes para telas menores, como tablet e celular */
+
+@media (max-width: 1000px) {
+    .sobre-solucao {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sobre-destaque {
+        margin: 1rem auto 0;
+        min-width: 260px;
+    }
+
+    .lista-passos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre-contexto {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .lista-passos {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-texto h2,
+    .sobre-funcionamento h2,
+    .sobre-contexto h2 {
+        font-size: 1.7rem;
+    }
+}
