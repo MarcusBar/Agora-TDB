@@ -10,9 +10,6 @@
   --lime: #d5df00;
   --lime-dark: #b8c300;
   --font-main: 'Poppins', sans-serif;
-  --space-page: 5rem;
-  --radius: 12px;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -33,8 +30,15 @@ a {
   color: inherit;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 a:focus-visible,

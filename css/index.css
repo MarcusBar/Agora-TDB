@@ -52,26 +52,6 @@
     gap: 1rem;
 }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.8rem 1.8rem;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: transform 0.2 ease, background-color 0.2 ease;
-}
-
-.btn:hover {
-    transform: translate(-2px);
-}
-
-.btn-primary {
-    background-color: var(--secondary-color);
-    color: var(--dark-color);
-}
-
 .btn-secondary {
     background-color: transparent;
     color: var(--secondary-color);
@@ -149,10 +129,6 @@
 
 /* ===== EXPLICANDO ÁGORA ====== */
 
-.secao-praca {
-    text-align: center;
-}
-
 .texto-praca{
     width: 45vw;
     padding: 4rem 3rem;
@@ -188,4 +164,32 @@
     margin-top: 3rem;
     text-align: justify;
     color: var(--ink);
+}
+
+/* ===== PRÉVIA DO DASHBOARD PÚBLICO ====== */
+
+.impacto-home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem var(--space-page) 5rem;
+}
+
+.impacto-topo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.impacto-topo h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+
+.impacto-topo p {
+    max-width: 600px;
+    color: var(--ink-soft);
 }
