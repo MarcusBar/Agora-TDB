@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <title>Contato | Ágora</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-container" aria-label="Navegação principal">
+            <a href="../index.html" id="container-logo">
+                <img src="../images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
+                <div>
+                    <h3>Ágora</h3>
+                    <p>Turma do Bem</p>
+                </div>
+            </a>
+
+            <ul class="container-pages">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="tagline">Fale conosco</p>
+            <h1>Contato</h1>
+            <p class="page-descricao">Se tiver alguma sugestão para o nosso projeto, fique à vontade para nos ajudar.</p>
+        </section>
+
+        <section class="secao-contato">
+            <div class="contato-formulario">
+                <h2>Envie uma mensagem</h2>
+                <form action="#" method="post">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" autocomplete="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Sobre o que você quer falar?">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva a sua mensagem aqui!" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                </form>
+            </div>
+
+            <aside class="contato-canais">
+                <h2>Onde nos encontrar</h2>
+                <address>
+                    <ul>
+                        <li>
+                            <span class="canal-titulo">E-mail</span>
+                            <a href="mailto:contato@improve.com.br">contato@improve.com.br</a>
+                        </li>
+                        <li>
+                            <span class="canal-titulo">Telefone</span>
+                            <a href="tel:+551199999999">(11) 9999-9999</a>
+                        </li>
+                        <li>
+                            <span class="canal-titulo">Suporte</span>
+                            <a href="mailto:marcus.alberes@gmail.com">marcus.alberes@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="canal-titulo">Github</span>
+                            <a href="https://github.com/JoaoArriero99/Sprint-1-Front-End-2026" target="_blank" rel="noopener noreferrer">Repositório do projeto</a>
+                        </li>
+                    </ul>
+                </address>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-marca">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
+                    <div>
+                        <h3>Ágora</h3>
+                        <p>Turma do Bem</p>
+                    </div>
+                </a>
+                <p class="footer-descricao">Plataforma integrada de gestão para a Turma do Bem, organização que promove o acesso à saúde bucal.</p>
+            </div>
+
+            <nav class="footer-pages" aria-label="Navegação do rodapé">
+                <h4>Navegue</h4>
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <address class="footer-contato">
+                <h4>Contatos</h4>
+                <ul>
+                    <li><a href="mailto:contato@improve.com.br">contato@improve.com.br</a></li>
+                    <li><a href="tel:+551199999999">(11) 9999-9999</a></li>
+                    <li><a href="https://github.com/JoaoArriero99/Sprint-1-Front-End-2026" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></li>
+                </ul>
+            </address>
+        </div>
+
+        <div class="footer-base">
+            <p>&copy; 2026 FIAP Turma do Bem</p>
+        </div>
+    </footer>
+</body>
+</html>
