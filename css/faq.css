@@ -1,0 +1,71 @@
+.secao-faq {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem var(--space-page) 5rem;
+}
+
+.lista-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lista-faq details {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    border-left: 5px solid var(--ink-light);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: border-color 0.2s ease;
+}
+
+/* --- Esse[Open] é estilo especifico da tag details --- */
+
+.lista-faq details[open] {
+    border-left-color: var(--secondary-color);
+}
+
+.lista-faq summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+}
+
+.lista-faq summary::after {
+    content: "+";
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.lista-faq details[open] summary::after {
+    content: "-";
+}
+
+.lista-faq details p {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--ink-soft);
+}
+
+.faq-ajuda {
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--ink-soft);
+}
+
+.faq-ajuda a {
+    font-weight: 600;
+    border-bottom: 3px solid var(--secondary-color);
+}
