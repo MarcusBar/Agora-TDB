@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dashboards.css">
+    <script src="js/dashboards.js" defer></script>
     <title>Home</title>
+    <script src="js/menu-login.js" defer></script>
 </head>
 <body>
     <header>
-        <nav class="nav-container">
+        <nav class="nav-container" aria-label="Navegação principal">
             <a href="index.html" id="container-logo">
                 <img src="images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
                 <div>
@@ -23,11 +26,19 @@
             </a>
 
             <ul class="container-pages">
-                <li><a href="">Programas</a></li>
-                <li><a href="./pages/sobre.html">Sobre</a></li>
-                <li><a href="./pages/integrantes.html">Integrantes</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="./pages/contato.html">Contato</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+                <li><a href="pages/integrantes.html">Integrantes</a></li>
+                <li><a href="pages/faq.html">FAQ</a></li>
+                <li><a href="pages/dashboards.html">Dashboards</a></li>
+                <li><a href="pages/contato.html">Contato</a></li>
+                <li class="login-menu">
+                    <button type="button" class="btn-login" id="botao-login" aria-haspopup="true" aria-expanded="false" aria-controls="menu-login">Login <span aria-hidden="true">&#9662;</span></button>
+                    <ul class="login-opcoes" id="menu-login" hidden>
+                        <li><a href="pages/acesso-interno.html?perfil=beneficiario">Beneficiário</a></li>
+                        <li><a href="pages/acesso-interno.html?perfil=colaborador">Colaborador</a></li>
+                        <li><a href="pages/acesso-interno.html?perfil=doador">Doador</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -37,18 +48,18 @@
             <div class="inicio-esquerda">
                 <p class="tagline">Transparência • Impacto • Participação</p>
                 <h1>Transformar cuidado <br>em <span>impacto real.</span></h1>
-                <p class="descricao">Acompanhe iniciativas, conheça os resultados e descubra como você pode contribuir para amplicar o acesso à saúde bucal. </p>
+                <p class="descricao">Acompanhe iniciativas, conheça os resultados e descubra como você pode contribuir para ampliar o acesso à saúde bucal. </p>
 
                 <div class="bnts">
-                    <a href="Campanhas" class="btn btn-primary">Nossas Campanhas</a>
-                    <a href="ajudar" class="btn btn-secondary">Quero ajudar &rarr;</a>
+                    <a href="pages/sobre.html" class="btn btn-primary">Nossas Campanhas</a>
+                    <a href="pages/contato.html" class="btn btn-secondary">Quero ajudar &rarr;</a>
                 </div>
             </div>
 
             <div class="inicio-direita">
                 <span class="card-subtitle">CUIDAR</span>
                 <p class="card-title">é <br> transformar.</p>
-                <span class="card-footer">ÁGORA TURMA DO BEM</span class="card-footer">
+                <span class="card-footer">ÁGORA TURMA DO BEM</span>
             </div>
         </section>
 
@@ -68,7 +79,6 @@
                     <p>Dados em decisões melhores</p>
                 </div>
             </div>
-            </div>
 
             <div class="objetivo">
                 <h2 class="objetivo-topico">03</h2>
@@ -79,7 +89,7 @@
             </div>
         </section>
 
-        <section class="secao-praça">
+        <section class="secao-praca">
             
             <div class="texto-praca">
                 <!-- Este span é o traço que fica atrás do h4 -->
@@ -98,10 +108,98 @@
 
         </section>
 
+        <section class="impacto-home">
+            <section class="impacto-topo">
+                <article>
+                    <p class="secao-rotulo"><span class="traco"></span> NOSSO IMPACTO</p>
+                    <h2>Transparência que se vê em números.</h2>
+                    <p>Uma prévia do painel público da Ágora. Os valores abaixo são fictícios e servem para demonstrar a experiência.</p>
+                </article>
+                <a href="pages/dashboards.html" class="btn btn-primary">Veja Todo o nosso Impacto &rarr;</a>
+            </section>
+
+            <ul class="lista-indicadores" aria-label="Prévia dos indicadores públicos demonstrativos">
+                <li class="indicador">
+                    <p class="indicador-rotulo">Arrecadação demonstrativa</p>
+                    <strong class="indicador-valor">R$ 184.650</strong>
+                    <p class="indicador-rodape"><b>74%</b> da meta ilustrativa</p>
+                    <progress value="74" max="100" aria-label="Progresso da meta de arrecadação">74%</progress>
+                </li>
+                <li class="indicador" data-icone="↗">
+                    <p class="indicador-rotulo">Ações acompanhadas</p>
+                    <strong class="indicador-valor">128</strong>
+                    <p class="indicador-rodape">Exemplo de iniciativas registradas</p>
+                </li>
+                <li class="indicador" data-icone="⌖">
+                    <p class="indicador-rotulo">Regiões representadas</p>
+                    <strong class="indicador-valor">9</strong>
+                    <p class="indicador-rodape">Distribuição ilustrativa</p>
+                </li>
+            </ul>
+
+            <article class="painel">
+                <header class="painel-topo">
+                    <hgroup>
+                        <p class="painel-rotulo">Acompanhamento</p>
+                        <h2>Arrecadação ao longo do período</h2>
+                    </hgroup>
+                    <span class="tag-demo">DADOS FICTÍCIOS</span>
+                </header>
+
+                <figure class="grafico" role="img" aria-label="Gráfico ilustrativo de arrecadação mensal de maio a outubro, com tendência de crescimento.">
+                    <ol class="grafico-barras">
+                        <li><span class="barra" style="height: 35%"></span><small>Mai</small></li>
+                        <li><span class="barra" style="height: 48%"></span><small>Jun</small></li>
+                        <li><span class="barra" style="height: 43%"></span><small>Jul</small></li>
+                        <li><span class="barra" style="height: 65%"></span><small>Ago</small></li>
+                        <li><span class="barra" style="height: 78%"></span><small>Set</small></li>
+                        <li><span class="barra" style="height: 92%"></span><small>Out</small></li>
+                    </ol>
+                </figure>
+            </article>
+        </section>
+
     </main>
 
     <footer>
+        <div class="footer-container">
+            <div class="footer-marca">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
+                    <div>
+                        <h3>Ágora</h3>
+                        <p>Turma do Bem</p>
+                    </div>
+                </a>
+                <p class="footer-descricao">Plataforma integrada de gestão para a Turma do Bem, organização que promove o acesso à saúde bucal.</p>
+            </div>
 
+            <nav class="footer-pages" aria-label="Navegação do rodapé">
+                <h4>Navegue</h4>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
+                    <li><a href="pages/integrantes.html">Integrantes</a></li>
+                    <li><a href="pages/faq.html">FAQ</a></li>
+                    <li><a href="pages/dashboards.html">Dashboards</a></li>
+                    <li><a href="pages/acesso-interno.html">Acesso interno</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <address class="footer-contato">
+                <h4>Contatos</h4>
+                <ul>
+                    <li><a href="mailto:contato@improve.com.br">contato@improve.com.br</a></li>
+                    <li><a href="tel:+551199999999">(11) 9999-9999</a></li>
+                    <li><a href="https://github.com/JoaoArriero99/Sprint-1-Front-End-2026" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></li>
+                </ul>
+            </address>
+        </div>
+
+        <div class="footer-base">
+            <p>&copy; 2026 FIAP Turma do Bem</p>
+        </div>
     </footer>
 </body>
 </html>
