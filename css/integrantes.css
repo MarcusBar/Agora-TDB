@@ -1,3 +1,21 @@
+/* Titulo que fica em cima da lista */
+
+.integrantes-titulo {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 3.5rem;
+}
+
+.integrantes-titulo h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+
+.integrantes-titulo p {
+    color: var(--ink-light);
+}
+
 /* Lista com os integrantes do grupo, tres por linha */
 
 .secao-integrantes {

@@ -10,6 +10,9 @@
   --lime: #d5df00;
   --lime-dark: #b8c300;
   --font-main: 'Poppins', sans-serif;
+  --space-page: 5rem;
+  --radius: 12px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -34,3 +37,10 @@ ul {
   list-style: none;
 }
 
+
+/* No celular o espaco nas laterais da pagina fica menor */
+@media (max-width: 600px) {
+  :root {
+    --space-page: 1.5rem;
+  }
+}

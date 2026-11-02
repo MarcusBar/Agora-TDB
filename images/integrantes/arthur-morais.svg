@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <rect width="300" height="400" fill="#353633"/>
+  <circle cx="150" cy="160" r="70" fill="#252525"/>
+  <path d="M40 400 Q150 230 260 400 Z" fill="#252525"/>
+  <text x="150" y="182" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="56" font-weight="700" fill="#e2f419">AM</text>
+</svg>
