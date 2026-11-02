@@ -1,0 +1,124 @@
+/* ===== LAYOUT ====== */
+
+.secao-contato {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem var(--space-page) 5rem;
+}
+
+.secao-contato h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== FORMULÁRIO ====== */
+
+.contato-formulario {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.contato-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.campo input,
+.campo textarea {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    color: var(--ink);
+    background-color: var(--paper);
+    padding: 0.8rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: var(--secondary-color);
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.contato-formulario .btn {
+    align-self: flex-start;
+}
+
+/* ===== CANAIS DE CONTATO ====== */
+
+.contato-canais {
+    background-color: var(--dark-color);
+    color: var(--paper);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    align-self: start;
+}
+
+.contato-canais h2 {
+    color: var(--primary-color);
+}
+
+.contato-canais address {
+    font-style: normal;
+}
+
+.contato-canais ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.canal-titulo {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+.contato-canais a {
+    word-break: break-word;
+    transition: color 0.2s ease;
+}
+
+.contato-canais a:hover {
+    color: var(--secondary-color);
+}
+
+/* ===== RESPONSIVO ====== */
+
+@media (max-width: 900px) {
+    .secao-contato {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .contato-formulario,
+    .contato-canais {
+        padding: 1.5rem;
+    }
+}
