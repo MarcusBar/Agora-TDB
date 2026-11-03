@@ -129,8 +129,21 @@
 
 /* ===== EXPLICANDO ÁGORA ====== */
 
-.texto-praca{
+.secao-praca{
+    display: flex;
+    align-items: center;
+}
+
+.imagem-praca{
     width: 45vw;
+    margin-top: 5vh;
+    border-radius: 5px;
+    border: 1px, black, solid
+
+}
+
+.texto-praca{
+    width: 50vw;
     padding: 4rem 3rem;
 }
 
@@ -192,4 +205,124 @@
 .impacto-topo p {
     max-width: 600px;
     color: var(--ink-soft);
+}
+
+@media (max-width: 1000px) {
+    .inicio-index {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        min-height: auto;
+        padding: 4rem var(--space-page);
+    }
+
+    .inicio-esquerda {
+        max-width: 100%;
+    }
+
+    .inicio-direita {
+        min-width: 260px;
+        margin: 1rem auto 0;
+    }
+
+    .secao-praca{
+        flex-direction: column;
+    }
+
+    .texto-praca {
+        width: 100%;
+        padding: 3rem var(--space-page);
+    }
+}
+
+@media (max-width: 768px) {
+    .inicio-index {
+        padding: 3rem var(--space-page);
+    }
+
+    .inicio-esquerda h1 {
+        font-size: 2.4rem;
+    }
+
+    .secao-objetivos {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem var(--space-page);
+    }
+
+    .objetivo {
+        justify-content: flex-start;
+        padding: 0.8rem 0;
+    }
+
+    .texto-praca {
+        padding: 2rem var(--space-page);
+    }
+
+    .texto-praca h4 {
+        padding: 1.5rem 0;
+    }
+
+    .texto-praca h1 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .texto-praca p {
+        margin-top: 1.5rem;
+    }
+
+    .traco {
+        width: 2rem;
+        height: 3px;
+    }
+
+    .impacto-home {
+        padding: 3rem var(--space-page);
+    }
+}
+
+@media (max-width: 600px) {
+    .inicio-esquerda h1 {
+        font-size: 2rem;
+    }
+
+    .inicio-esquerda .tagline {
+        font-size: 0.95rem;
+    }
+
+    .bnts {
+        flex-direction: column;
+    }
+
+    .inicio-direita {
+        min-width: 0;
+        width: 80%;
+        padding: 2rem 1rem;
+    }
+
+    .inicio-direita .card-title {
+        font-size: 1.8rem;
+    }
+
+    .inicio-direita .card-footer {
+        letter-spacing: 0.3rem;
+    }
+
+    .texto-praca h1 {
+        font-size: 1.7rem;
+    }
+
+    .texto-praca p {
+        text-align: left;
+    }
+
+    .impacto-topo h2 {
+        font-size: 1.7rem;
+    }
+
+    .impacto-topo .btn {
+        width: 100%;
+    }
 }

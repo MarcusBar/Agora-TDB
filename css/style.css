@@ -89,12 +89,12 @@ summary:focus-visible {
 
 /* ===== TOPO DAS PÁGINAS INTERNAS ====== */
 
-.page-hero {
+.page-intro {
   background-color: var(--dark-color);
   padding: 5rem var(--space-page);
 }
 
-.page-hero .tagline {
+.page-intro .tagline {
   color: var(--secondary-color);
   font-size: 1.1rem;
   font-weight: 500;
@@ -102,14 +102,14 @@ summary:focus-visible {
   word-spacing: 0.2rem;
 }
 
-.page-hero h1 {
+.page-intro h1 {
   color: var(--primary-color);
   font-size: 3.5rem;
   line-height: 1.1;
   margin-bottom: 1rem;
 }
 
-.page-hero .page-descricao {
+.page-intro .page-descricao {
   color: var(--paper);
   opacity: 0.9;
   max-width: 600px;
