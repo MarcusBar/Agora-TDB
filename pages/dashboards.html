@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Painel público demonstrativo da Ágora: metas, transparência e impacto social da Turma do Bem.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/dashboards.css">
+    <script src="../js/dashboards.js" defer></script>
+    <title>Dashboards | Ágora</title>
+    <script src="../js/menu-login.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container" aria-label="Navegação principal">
+            <a href="../index.html" id="container-logo">
+                <img src="../images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
+                <div>
+                    <h3>Ágora</h3>
+                    <p>Turma do Bem</p>
+                </div>
+            </a>
+
+            <ul class="container-pages">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="dashboards.html" aria-current="page">Dashboards</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li class="login-menu">
+                    <button type="button" class="btn-login" id="botao-login" aria-haspopup="true" aria-expanded="false" aria-controls="menu-login">Login <span aria-hidden="true">&#9662;</span></button>
+                    <ul class="login-opcoes" id="menu-login" hidden>
+                        <li><a href="acesso-interno.html?perfil=beneficiario">Beneficiário</a></li>
+                        <li><a href="acesso-interno.html?perfil=colaborador">Colaborador</a></li>
+                        <li><a href="acesso-interno.html?perfil=doador">Doador</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero dash-hero">
+            <article>
+                <p class="tagline">Transparência • Impacto</p>
+                <h1>Dashboards</h1>
+                <p class="page-descricao">Acompanhe indicadores de arrecadação, metas e iniciativas. Nesta versão acadêmica, todos os números são fictícios e servem para ilustrar a experiência.</p>
+            </article>
+            <p class="dash-selo">Ambiente demonstrativo · 2026</p>
+        </section>
+
+        <section class="dash-main">
+            <ul class="lista-indicadores" aria-label="Indicadores públicos demonstrativos">
+                <li class="indicador">
+                    <p class="indicador-rotulo">Arrecadação demonstrativa</p>
+                    <strong class="indicador-valor">R$ 184.650</strong>
+                    <p class="indicador-rodape"><b>74%</b> da meta ilustrativa</p>
+                    <progress value="74" max="100" aria-label="Progresso da meta de arrecadação">74%</progress>
+                </li>
+                <li class="indicador destaque" data-icone="◎">
+                    <p class="indicador-rotulo">Meta de arrecadação</p>
+                    <strong class="indicador-valor">R$ 250.000</strong>
+                    <p class="indicador-rodape">Meta ilustrativa do período</p>
+                </li>
+                <li class="indicador" data-icone="↗">
+                    <p class="indicador-rotulo">Ações acompanhadas</p>
+                    <strong class="indicador-valor">128</strong>
+                    <p class="indicador-rodape">Exemplo de iniciativas registradas</p>
+                </li>
+                <li class="indicador" data-icone="⌖">
+                    <p class="indicador-rotulo">Regiões representadas</p>
+                    <strong class="indicador-valor">9</strong>
+                    <p class="indicador-rodape">Distribuição ilustrativa</p>
+                </li>
+            </ul>
+
+            <section class="dash-grid">
+                <article class="painel painel-largo">
+                    <header class="painel-topo">
+                        <hgroup>
+                            <p class="painel-rotulo">Acompanhamento</p>
+                            <h2>Arrecadação ao longo do período</h2>
+                        </hgroup>
+                        <span class="tag-demo">DADOS FICTÍCIOS</span>
+                    </header>
+
+                    <p class="grafico-total">R$ 184.650 <small>total ilustrativo</small></p>
+
+                    <figure class="grafico" role="img" aria-label="Gráfico ilustrativo de arrecadação mensal de maio a outubro, com tendência de crescimento.">
+                        <ol class="grafico-barras">
+                            <li><span class="barra" style="height: 35%"></span><small>Mai</small></li>
+                            <li><span class="barra" style="height: 48%"></span><small>Jun</small></li>
+                            <li><span class="barra" style="height: 43%"></span><small>Jul</small></li>
+                            <li><span class="barra" style="height: 65%"></span><small>Ago</small></li>
+                            <li><span class="barra" style="height: 78%"></span><small>Set</small></li>
+                            <li><span class="barra" style="height: 92%"></span><small>Out</small></li>
+                        </ol>
+                        <figcaption class="grafico-legenda">
+                            <span>Valores apenas para demonstrar a visualização</span>
+                            <span>Mai–Out</span>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="painel">
+                    <header class="painel-topo">
+                        <hgroup>
+                            <p class="painel-rotulo">Prestação de contas</p>
+                            <h2>Destinação ilustrativa</h2>
+                        </hgroup>
+                        <span class="tag-demo">EXEMPLO</span>
+                    </header>
+
+                    <ul class="lista-destinacao">
+                        <li>
+                            <p><strong>Atendimentos e iniciativas</strong><small>Uso relacionado às ações</small></p>
+                            <b>55%</b>
+                        </li>
+                        <li>
+                            <p><strong>Campanhas e mobilização</strong><small>Comunicação e engajamento</small></p>
+                            <b>25%</b>
+                        </li>
+                        <li>
+                            <p><strong>Operação e suporte</strong><small>Estrutura de apoio</small></p>
+                            <b>20%</b>
+                        </li>
+                    </ul>
+
+                    <p class="aviso-painel">As categorias e percentuais acima são fictícios. Uma versão real deve utilizar informações validadas pela organização e prestar contas conforme os dados oficiais.</p>
+                </article>
+
+                <article class="painel painel-largo">
+                    <header class="painel-topo">
+                        <hgroup>
+                            <p class="painel-rotulo">Visão territorial</p>
+                            <h2>Iniciativas por região</h2>
+                        </hgroup>
+                        <span class="tag-demo">EXEMPLO</span>
+                    </header>
+
+                    <ul class="lista-regioes">
+                        <li>
+                            <span>Sudeste</span>
+                            <progress value="41" max="50" aria-label="Sudeste">41</progress>
+                            <b>41</b>
+                        </li>
+                        <li>
+                            <span>Nordeste</span>
+                            <progress value="32" max="50" aria-label="Nordeste">32</progress>
+                            <b>32</b>
+                        </li>
+                        <li>
+                            <span>Sul</span>
+                            <progress value="23" max="50" aria-label="Sul">23</progress>
+                            <b>23</b>
+                        </li>
+                        <li>
+                            <span>Centro-Oeste</span>
+                            <progress value="14" max="50" aria-label="Centro-Oeste">14</progress>
+                            <b>14</b>
+                        </li>
+                        <li>
+                            <span>Norte</span>
+                            <progress value="10" max="50" aria-label="Norte">10</progress>
+                            <b>10</b>
+                        </li>
+                    </ul>
+
+                    <p class="nota-painel">Quantidades ilustrativas, não representam atendimentos reais.</p>
+                </article>
+
+                <aside class="painel painel-escuro">
+                    <p class="painel-rotulo">Nosso propósito</p>
+                    <h2>Indicadores importam. As pessoas vêm primeiro.</h2>
+                    <p>O painel público foi pensado para comunicar resultados com clareza, sem expor dados pessoais ou informações sensíveis dos beneficiários.</p>
+                    <a href="sobre.html" class="link-seta">Entenda a proposta &rarr;</a>
+                </aside>
+            </section>
+
+            <section class="faixa-apoio">
+                <article>
+                    <p class="tagline">Participe</p>
+                    <h2>Quer saber mais ou colaborar?</h2>
+                    <p>Entre em contato para conhecer a proposta acadêmica e discutir formas de apoio com os canais oficiais da organização.</p>
+                </article>
+                <a href="contato.html" class="btn btn-primary">Fale com a equipe &rarr;</a>
+            </section>
+
+            <p class="nota-privacidade"><strong>Nota de transparência:</strong> este dashboard é um protótipo visual. Todos os indicadores são fictícios; não há integração com banco de dados, pagamentos ou sistemas oficiais. Dados públicos reais devem ser validados e agregados, com proteção à privacidade e à LGPD.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-marca">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
+                    <div>
+                        <h3>Ágora</h3>
+                        <p>Turma do Bem</p>
+                    </div>
+                </a>
+                <p class="footer-descricao">Plataforma integrada de gestão para a Turma do Bem, organização que promove o acesso à saúde bucal.</p>
+            </div>
+
+            <nav class="footer-pages" aria-label="Navegação do rodapé">
+                <h4>Navegue</h4>
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="acesso-interno.html">Acesso interno</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <address class="footer-contato">
+                <h4>Contatos</h4>
+                <ul>
+                    <li><a href="mailto:contato@improve.com.br">contato@improve.com.br</a></li>
+                    <li><a href="tel:+551199999999">(11) 9999-9999</a></li>
+                    <li><a href="https://github.com/JoaoArriero99/Sprint-1-Front-End-2026" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></li>
+                </ul>
+            </address>
+        </div>
+
+        <div class="footer-base">
+            <p>&copy; 2026 FIAP Turma do Bem</p>
+        </div>
+    </footer>
+</body>
+</html>

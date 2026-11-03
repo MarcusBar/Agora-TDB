@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modelo demonstrativo de acesso à área interna da Ágora.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/acesso-interno.css">
+    <script src="../js/acesso-interno.js" defer></script>
+    <title>Acesso interno | Ágora</title>
+    <script src="../js/menu-login.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container" aria-label="Navegação principal">
+            <a href="../index.html" id="container-logo">
+                <img src="../images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
+                <div>
+                    <h3>Ágora</h3>
+                    <p>Turma do Bem</p>
+                </div>
+            </a>
+
+            <ul class="container-pages">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="dashboards.html">Dashboards</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li class="login-menu">
+                    <button type="button" class="btn-login" id="botao-login" aria-haspopup="true" aria-expanded="false" aria-controls="menu-login">Login <span aria-hidden="true">&#9662;</span></button>
+                    <ul class="login-opcoes" id="menu-login" hidden>
+                        <li><a href="acesso-interno.html?perfil=beneficiario">Beneficiário</a></li>
+                        <li><a href="acesso-interno.html?perfil=colaborador">Colaborador</a></li>
+                        <li><a href="acesso-interno.html?perfil=doador">Doador</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="acesso-layout">
+        <section class="acesso-marca">
+            <article class="acesso-mensagem">
+                <p class="tagline">Ambiente da equipe</p>
+                <h1>Organizar dados. <span>Ampliar o cuidado.</span></h1>
+                <p>Um espaço de apoio à operação da Turma do Bem, pensado para conectar cadastros, atendimentos, campanhas e doações.</p>
+            </article>
+
+            <p class="acesso-nota">Informação integrada para decisões com propósito.</p>
+        </section>
+
+        <section class="acesso-formulario">
+            <article class="cartao-login">
+                <p class="secao-rotulo"><span class="traco"></span> ÁREA INTERNA</p>
+                <h2 id="titulo-acesso">Acesso do colaborador</h2>
+
+                <nav class="perfis" aria-label="Escolha o tipo de acesso">
+                    <a href="acesso-interno.html?perfil=beneficiario" data-perfil="beneficiario">Beneficiário</a>
+                    <a href="acesso-interno.html?perfil=colaborador" data-perfil="colaborador">Colaborador</a>
+                    <a href="acesso-interno.html?perfil=doador" data-perfil="doador">Doador</a>
+                </nav>
+
+                <p class="intro" id="intro-acesso">Entre com suas credenciais institucionais para acessar o ambiente de trabalho.</p>
+
+                <form id="form-login" action="#" method="post" novalidate>
+                    <p class="campo">
+                        <label for="email" id="rotulo-email">E-mail institucional</label>
+                        <input type="email" id="email" name="email" placeholder="nome@instituicao.org.br" autocomplete="username" required>
+                    </p>
+
+                    <p class="campo">
+                        <label for="senha">Senha <small>Campo demonstrativo</small></label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" minlength="4" autocomplete="current-password" required>
+                    </p>
+
+                    <p id="feedback-login" class="feedback-login" role="status" aria-live="polite"></p>
+
+                    <button type="submit" class="btn btn-primary">Acessar ambiente <span aria-hidden="true">&rarr;</span></button>
+                </form>
+
+                <aside class="seguranca">
+                    <p>
+                        <strong>Privacidade em primeiro lugar</strong>
+                        <small>Em uma versão real, o acesso deve ser validado por um servidor seguro e concedido somente a usuários autorizados.</small>
+                    </p>
+                </aside>
+
+                <button type="button" id="botao-demo" class="botao-demo">Visualizar demonstração sem autenticação</button>
+            </article>
+
+            <p class="aviso-prototipo"><strong>Protótipo acadêmico:</strong> este formulário não valida usuários nem protege os dados. Qualquer e-mail e senha preenchidos permitem avançar para a demonstração. Não digite credenciais reais.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-marca">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
+                    <div>
+                        <h3>Ágora</h3>
+                        <p>Turma do Bem</p>
+                    </div>
+                </a>
+                <p class="footer-descricao">Plataforma integrada de gestão para a Turma do Bem, organização que promove o acesso à saúde bucal.</p>
+            </div>
+
+            <nav class="footer-pages" aria-label="Navegação do rodapé">
+                <h4>Navegue</h4>
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="acesso-interno.html">Acesso interno</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <address class="footer-contato">
+                <h4>Contatos</h4>
+                <ul>
+                    <li><a href="mailto:contato@improve.com.br">contato@improve.com.br</a></li>
+                    <li><a href="tel:+551199999999">(11) 9999-9999</a></li>
+                    <li><a href="https://github.com/JoaoArriero99/Sprint-1-Front-End-2026" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></li>
+                </ul>
+            </address>
+        </div>
+
+        <div class="footer-base">
+            <p>&copy; 2026 FIAP Turma do Bem</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Painel interno demonstrativo da Ágora para ilustrar o acompanhamento operacional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/dashboards.css">
+    <script src="../js/painel-interno.js" defer></script>
+    <title>Painel interno | Ágora</title>
+    <script src="../js/menu-login.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container" aria-label="Navegação principal">
+            <a href="../index.html" id="container-logo">
+                <img src="../images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
+                <div>
+                    <h3>Ágora</h3>
+                    <p>Turma do Bem</p>
+                </div>
+            </a>
+
+            <ul class="container-pages">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="dashboards.html">Dashboards</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li class="login-menu">
+                    <button type="button" class="btn-login" id="botao-login" aria-haspopup="true" aria-expanded="false" aria-controls="menu-login">Login <span aria-hidden="true">&#9662;</span></button>
+                    <ul class="login-opcoes" id="menu-login" hidden>
+                        <li><a href="acesso-interno.html?perfil=beneficiario">Beneficiário</a></li>
+                        <li><a href="acesso-interno.html?perfil=colaborador">Colaborador</a></li>
+                        <li><a href="acesso-interno.html?perfil=doador">Doador</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero dash-hero">
+            <article>
+                <p class="tagline">Visão operacional</p>
+                <h1>Painel interno</h1>
+                <p class="page-descricao">Exemplo de como a equipe poderia acompanhar necessidades, atendimentos, doações e campanhas em um só ambiente.</p>
+            </article>
+            <p class="dash-selo">Ambiente de demonstração</p>
+        </section>
+
+        <section class="dash-main">
+            <aside class="alerta-prototipo">
+                <p><strong>Protótipo acadêmico — não é uma área segura.</strong> Os dados são fictícios. Esta página não possui autenticação, controle de acesso nem conexão com sistemas reais. Não insira dados pessoais.</p>
+            </aside>
+
+            <form class="barra-filtro" id="form-periodo">
+                <label for="periodo">Período de referência</label>
+                <select id="periodo" name="periodo">
+                    <option value="mes">Este mês (demo)</option>
+                    <option value="trimestre">Últimos 3 meses (demo)</option>
+                    <option value="ano">Ano de 2026 (demo)</option>
+                </select>
+                <small>Os números não são dados reais da Turma do Bem.</small>
+                <a href="acesso-interno.html">Sair do painel</a>
+            </form>
+
+            <ul class="lista-indicadores" aria-label="Indicadores operacionais fictícios">
+                <li class="indicador destaque" data-icone="◎">
+                    <p class="indicador-rotulo">Cadastros demonstrativos</p>
+                    <strong class="indicador-valor" id="cadastros">246</strong>
+                    <p class="indicador-rodape"><b>+12%</b> variação ilustrativa</p>
+                </li>
+                <li class="indicador" data-icone="✚">
+                    <p class="indicador-rotulo">Atendimentos em acompanhamento</p>
+                    <strong class="indicador-valor" id="atendimentos">83</strong>
+                    <p class="indicador-rodape">Casos fictícios em diferentes etapas</p>
+                </li>
+                <li class="indicador" data-icone="↗">
+                    <p class="indicador-rotulo">Doações registradas</p>
+                    <strong class="indicador-valor" id="doacoes">R$ 48.320</strong>
+                    <p class="indicador-rodape">Valor demonstrativo</p>
+                </li>
+                <li class="indicador" data-icone="◷">
+                    <p class="indicador-rotulo">Campanhas em andamento</p>
+                    <strong class="indicador-valor" id="campanhas">7</strong>
+                    <p class="indicador-rodape">Exemplo de acompanhamento</p>
+                </li>
+            </ul>
+
+            <section class="dash-grid">
+                <article class="painel painel-largo">
+                    <header class="painel-topo">
+                        <hgroup>
+                            <p class="painel-rotulo">Fluxo de trabalho</p>
+                            <h2>Acompanhamento de atendimentos</h2>
+                        </hgroup>
+                        <span class="tag-demo">FICTÍCIO</span>
+                    </header>
+
+                    <ul class="lista-status">
+                        <li>
+                            <p>Novos registros <b>24</b></p>
+                            <progress value="35" max="100" aria-label="Novos registros">35%</progress>
+                        </li>
+                        <li>
+                            <p>Em análise <b>31</b></p>
+                            <progress value="55" max="100" aria-label="Em análise">55%</progress>
+                        </li>
+                        <li>
+                            <p>Em encaminhamento <b>18</b></p>
+                            <progress value="32" max="100" aria-label="Em encaminhamento">32%</progress>
+                        </li>
+                        <li>
+                            <p>Concluídos no período <b>10</b></p>
+                            <progress value="19" max="100" aria-label="Concluídos no período">19%</progress>
+                        </li>
+                    </ul>
+
+                    <p class="nota-painel">Status ilustrativos. Em uma aplicação real, o acesso a status e prioridades deve ser limitado a pessoas autorizadas.</p>
+                </article>
+
+                <article class="painel">
+                    <header class="painel-topo">
+                        <hgroup>
+                            <p class="painel-rotulo">Gestão de campanhas</p>
+                            <h2>Visão resumida</h2>
+                        </hgroup>
+                        <span class="tag-demo">FICTÍCIO</span>
+                    </header>
+
+                    <ul class="lista-campanhas">
+                        <li class="campanha" data-icone="✳">
+                            <article>
+                                <h3>Campanha Sorriso</h3>
+                                <small>Arrecadação demonstrativa</small>
+                                <progress value="68" max="100" aria-label="Campanha Sorriso">68%</progress>
+                            </article>
+                            <b>68%</b>
+                        </li>
+                        <li class="campanha" data-icone="◎">
+                            <article>
+                                <h3>Rede de Apoio</h3>
+                                <small>Mobilização de parceiros</small>
+                                <progress value="42" max="100" aria-label="Rede de Apoio">42%</progress>
+                            </article>
+                            <b>42%</b>
+                        </li>
+                        <li class="campanha" data-icone="↗">
+                            <article>
+                                <h3>Conexão Regional</h3>
+                                <small>Iniciativas por território</small>
+                                <progress value="83" max="100" aria-label="Conexão Regional">83%</progress>
+                            </article>
+                            <b>83%</b>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="painel painel-tabela">
+                    <header class="painel-topo">
+                        <hgroup>
+                            <p class="painel-rotulo">Registros de exemplo</p>
+                            <h2>Fila operacional fictícia</h2>
+                        </hgroup>
+                        <form class="busca" id="form-busca" role="search">
+                            <label class="sr-only" for="filtro-registros">Filtrar registros</label>
+                            <input type="search" id="filtro-registros" placeholder="Filtrar por tipo...">
+                        </form>
+                    </header>
+
+                    <section class="tabela-wrap" tabindex="0" aria-label="Tabela de registros fictícios">
+                        <table>
+                            <caption class="sr-only">Registros fictícios da fila operacional</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Referência</th>
+                                    <th scope="col">Tipo</th>
+                                    <th scope="col">Região</th>
+                                    <th scope="col">Etapa</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabela-registros">
+                                <tr>
+                                    <td>DEMO-001</td>
+                                    <td>Atendimento</td>
+                                    <td>Sudeste</td>
+                                    <td><span class="etapa etapa-analise">Em análise</span></td>
+                                </tr>
+                                <tr>
+                                    <td>DEMO-002</td>
+                                    <td>Doação</td>
+                                    <td>Nordeste</td>
+                                    <td><span class="etapa etapa-registrada">Registrada</span></td>
+                                </tr>
+                                <tr>
+                                    <td>DEMO-003</td>
+                                    <td>Campanha</td>
+                                    <td>Sul</td>
+                                    <td><span class="etapa etapa-andamento">Em andamento</span></td>
+                                </tr>
+                                <tr>
+                                    <td>DEMO-004</td>
+                                    <td>Atendimento</td>
+                                    <td>Norte</td>
+                                    <td><span class="etapa etapa-novo">Novo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>DEMO-005</td>
+                                    <td>Campanha</td>
+                                    <td>Centro-Oeste</td>
+                                    <td><span class="etapa etapa-analise">Em análise</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <p class="nota-painel" id="resultado-filtro" role="status" aria-live="polite">5 registros fictícios exibidos.</p>
+                </article>
+
+                <aside class="painel painel-principios">
+                    <p class="painel-rotulo">Princípios de acesso</p>
+                    <h2>Dados certos para as pessoas certas.</h2>
+                    <ul>
+                        <li>Dados públicos devem ser agregados e revisados.</li>
+                        <li>CPF, contato e detalhes pessoais não devem aparecer no painel público.</li>
+                        <li>Status e prioridade de beneficiários são informações internas, acessíveis apenas a perfis autorizados.</li>
+                        <li>Uma versão real precisa de autenticação, permissões, registro de acesso e proteção dos dados.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <p class="nota-privacidade"><strong>Importante:</strong> este painel serve apenas como exemplo de interface. Ele não implementa login, persistência, autorização, auditoria ou integração com banco de dados. A segurança real exige desenvolvimento de backend e validação dos requisitos de privacidade.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-marca">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../images/logo.png" alt="Logo Turma do Bem" class="imagem-tdb">
+                    <div>
+                        <h3>Ágora</h3>
+                        <p>Turma do Bem</p>
+                    </div>
+                </a>
+                <p class="footer-descricao">Plataforma integrada de gestão para a Turma do Bem, organização que promove o acesso à saúde bucal.</p>
+            </div>
+
+            <nav class="footer-pages" aria-label="Navegação do rodapé">
+                <h4>Navegue</h4>
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="acesso-interno.html">Acesso interno</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <address class="footer-contato">
+                <h4>Contatos</h4>
+                <ul>
+                    <li><a href="mailto:contato@improve.com.br">contato@improve.com.br</a></li>
+                    <li><a href="tel:+551199999999">(11) 9999-9999</a></li>
+                    <li><a href="https://github.com/JoaoArriero99/Sprint-1-Front-End-2026" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></li>
+                </ul>
+            </address>
+        </div>
+
+        <div class="footer-base">
+            <p>&copy; 2026 FIAP Turma do Bem</p>
+        </div>
+    </footer>
+</body>
+</html>

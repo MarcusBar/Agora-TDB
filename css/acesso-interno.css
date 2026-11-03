@@ -1,0 +1,277 @@
+/* ===== LAYOUT (duas colunas) ====== */
+
+.acesso-layout {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 80px);
+}
+
+.acesso-marca,
+.acesso-formulario {
+    flex: 1 1 360px;
+    min-width: 0;
+}
+
+/* ===== PAINEL ESCURO ====== */
+
+.acesso-marca {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem var(--space-page);
+    background-color: var(--dark-color);
+    color: var(--paper);
+}
+
+.acesso-mensagem {
+    max-width: 520px;
+    padding: 3rem 0;
+}
+
+.acesso-mensagem h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+}
+
+.acesso-mensagem h1 span {
+    color: var(--secondary-color);
+}
+
+.acesso-mensagem p:not(.tagline) {
+    opacity: 0.85;
+}
+
+.acesso-mensagem .tagline {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.acesso-nota {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--ink-light);
+}
+
+.acesso-nota::before {
+    content: "✳";
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.acesso-marca::before,
+.acesso-marca::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border: 1px solid rgba(226, 244, 25, 0.2);
+    border-radius: 50%;
+}
+
+.acesso-marca::before {
+    top: 15%;
+    right: -200px;
+    width: 460px;
+    height: 460px;
+}
+
+.acesso-marca::after {
+    top: 22%;
+    right: -140px;
+    width: 340px;
+    height: 340px;
+    box-shadow: 0 0 0 35px rgba(226, 244, 25, 0.03);
+}
+
+/* ===== FORMULÁRIO ====== */
+
+.acesso-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem var(--space-page);
+}
+
+.cartao-login {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.cartao-login::before {
+    content: "⌘";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 14px;
+    background-color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.cartao-login h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.cartao-login .intro {
+    margin-bottom: 1.8rem;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+}
+
+.cartao-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.cartao-login .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.cartao-login .campo label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.cartao-login .campo small {
+    color: #686b60;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.cartao-login input {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    color: var(--ink);
+    background-color: var(--white);
+    padding: 0.8rem 1rem;
+    border: 2px solid #dcded2;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.cartao-login input:focus {
+    border-color: var(--lime-dark);
+}
+
+.feedback-login {
+    min-height: 1.2rem;
+    font-size: 0.85rem;
+    color: #596000;
+}
+
+.cartao-login .btn {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.seguranca {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #eceee2;
+}
+
+.seguranca::before {
+    content: "♢";
+    color: #596000;
+    font-size: 1.4rem;
+}
+
+.seguranca strong,
+.seguranca small {
+    display: block;
+}
+
+.seguranca strong {
+    font-size: 0.85rem;
+}
+
+.seguranca small {
+    margin-top: 0.2rem;
+    font-size: 0.75rem;
+    color: #55574e;
+}
+
+.botao-demo {
+    display: block;
+    margin: 1.2rem auto 0;
+    border: 0;
+    background: transparent;
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    color: #55574e;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.botao-demo:hover {
+    color: var(--ink);
+}
+
+.aviso-prototipo {
+    max-width: 440px;
+    margin: 2rem auto 0;
+    font-size: 0.75rem;
+    color: #686b60;
+}
+
+.aviso-prototipo strong {
+    color: var(--ink-soft);
+}
+
+.perfis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.perfis a {
+    padding: 0.3rem 0.9rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.perfis a:hover,
+.perfis a[aria-current="true"] {
+    background-color: var(--secondary-color);
+}
+
+/* ===== RESPONSIVO ====== */
+
+@media (max-width: 768px) {
+    .acesso-marca,
+    .acesso-formulario {
+        padding: 3rem var(--space-page);
+    }
+
+    .acesso-mensagem {
+        padding: 2rem 0;
+    }
+
+    .acesso-mensagem h1 {
+        font-size: 2.4rem;
+    }
+}
